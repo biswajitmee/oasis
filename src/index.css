@@ -1,0 +1,1093 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-color: #5A5A5A;
+  background: linear-gradient(rgba(0, 0, 0, 0.90),
+      rgba(0, 0, 0, 0.30)), url('background-food.png');
+}
+
+@layer components {
+
+  .extrafont {
+    font-family: 'Rozha One', serif;
+  }
+
+  .tittleText {
+    @apply text-4xl text-white extrafont pt-2 pb-2
+  }
+
+  .tittleTextlg {
+    @apply text-5xl text-white extrafont pt-2 pb-2
+  }
+
+
+  .tittleTextSmall {
+    @apply text-xl text-white extrafont
+  }
+
+
+
+}
+
+@layer utilities {
+
+  .offer div {
+    width: 400px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #000;
+    margin-top: 25px;
+  }
+
+  .fromContact {
+    max-width: 50%;
+    margin: auto;
+    border-radius: 50px;
+    font-family: 'Rozha One', serif;
+  }
+
+
+  .contactinsideRound {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    scale: 1.2;
+    z-index: 1;
+  }
+
+
+  .formhere {
+    font-family: 'Aclonica', sans-serif;
+  }
+
+
+  .formhere label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .formhere textarea {
+    font-size: 18px;
+
+    min-height: 200px;
+  }
+
+  .formhere input {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .fromContact .h1 {
+    font-size: 120px;
+    color: #fff;
+    font-weight: bolder;
+
+  }
+
+  .backgrond-foodContact {
+    position: relative;
+    background-size: cover;
+    min-height: 105vh;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.8)), url('background-food.png');
+    border-radius:40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 15px;
+    margin-top: 150px;
+
+  }
+
+  .contactVg-1 {
+    left: 10%;
+    top: 35%;
+    position: absolute;
+  }
+
+  .contactVg-2 {
+
+    position: absolute;
+    left: 20%;
+    top: 20%;
+  }
+
+  .contactVg-3 {
+    position: absolute;
+    right: 20%;
+    top: 40%;
+  }
+
+  .contactVg-4 {
+    position: absolute;
+    right: 30%;
+    top: 20%;
+  }
+
+  .contactVg-5 {
+    position: absolute;
+    left: 30%;
+    top: 60%;
+  }
+
+
+  .phNumber {
+    font-size: 120px;
+    color: #FFF;
+    font-weight: 700;
+  }
+
+
+
+  .veg-1 {
+    position: absolute;
+  }
+
+  .veg-2 {
+    position: absolute;
+  }
+
+  .veg-3 {
+    position: absolute;
+  }
+
+  .veg-4 {
+    position: absolute;
+  }
+
+  .veg-5 {
+    position: absolute;
+  }
+
+
+
+
+
+
+
+
+
+
+  .bookingSection {
+    font-size: 40px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1C1B1B;
+    border-radius: 50px;
+    z-index: 9;
+
+  }
+
+
+
+  .middleBox {
+    position: relative;
+    min-height: 50vh;
+    width: 100vw;
+    margin-top: -100vh;
+  }
+
+  .dinnerPlan {
+    font-family: 'Rozha One', serif;
+    margin: auto;
+    color: #ffffff;
+    width: 40%;
+    margin-top: 25vh;
+    height: 70vh;
+    margin-bottom: 25px;
+    padding-left: 90px;
+    z-index: 999;
+    line-height: 1;
+  }
+
+
+
+  .plate {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    scale: 0.8;
+
+  }
+
+  .plate img {
+    position: absolute;
+
+  }
+
+
+
+  .textLineLeft {
+    font-size: 10vh;
+    font-weight: bold;
+    line-height: 1;
+    width: 100vw;
+    color: #202020;
+    font-family: 'Rozha One', serif;
+
+  }
+
+  .textLineRight {
+    font-size: 12vh;
+    font-weight: bold;
+    line-height: 1;
+    width: 100vw;
+    color: #151515;
+    font-family: 'Rozha One', serif;
+
+  }
+
+
+
+
+  .dinnerPlan .h1 {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px 0px;
+  }
+
+  .dinnerPlan .h3 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px 0px;
+  }
+
+  .dinnerPlan .h5 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px 0px;
+  }
+
+  #smooth-content {
+    padding-bottom: 100px;
+  }
+
+  .footer {
+    margin-top: 25px;
+    margin-bottom:35px;
+    padding: 25px;
+font-size:18px;
+color: #fff;
+font-weight: 500;
+background-color: #000;
+border-radius: 15px;
+  }
+  .footer p{line-height: 1.5;}
+
+  .footer img {
+
+    margin: auto;
+
+  }
+
+  .floating-element {
+    width: 500px;
+
+    height: 500px;
+    background: blue;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    /* Enable 3D transformations */
+  }
+
+  .headingSize {
+    font-size: 50px;
+    font-family: 'Aclonica', sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+
+  .card-menu {
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    height: 200px;
+    margin-bottom: 100px;
+    background-color: rgb(37, 37, 37);
+    color: #ffff;
+  }
+
+  .card-menu p {
+    font-size: 20px;
+    font-family: 'Aclonica', sans-serif;
+    padding: 15px 0px 0px;
+  }
+
+  .card-menu img {
+    width: 200px;
+    z-index: 1;
+  }
+
+  .card-menu:hover {
+    background-color: rgb(0, 0, 0);
+  }
+
+  .makeAboutLoader {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+  }
+
+
+
+  .tiggerNavIcon {
+    width: 100%;
+  }
+
+  .navIndicator {
+    position: absolute;
+    top: 55px;
+    width: 50px;
+    height: 50px;
+    background-color: #FCD052;
+    right: 50px;
+    border-radius: 100px;
+    opacity: 0.5;
+  }
+
+
+  .topNavigation {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .leftNav {
+    width: 350px;
+    height: 100vh;
+    background-image: url("nav-left-bg.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    scale: 1.2;
+    margin-left: 50px;
+    padding: 30px;
+  }
+
+  .leftNav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .leftNav ul li {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    background-image: url("li-line-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
+
+
+
+
+
+  .leftNav ul li div:nth-child(1) img {
+    width: 80px;
+  }
+
+  .leftNav ul li div:nth-child(2) {
+    padding-left: 25px;
+  }
+
+  .leftNav ul li:hover {
+    color: #e2cf00;
+    font-weight: 400;
+  }
+
+  .loader_box {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: #fff;
+    z-index: 999;
+
+  }
+
+  .item {
+    padding: 25px;
+    background-color: #000;
+    padding: 5px 5px 90px;
+    border-radius: 25px;
+  }
+
+  .item img {
+    border-radius: 20px;
+  }
+
+
+  .aboutContent {
+    padding: 10px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+
+  }
+
+
+  .backgrond-food {
+    position: relative;
+    background-size: cover;
+    min-height: 105vh;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.8)), url('background-food.png');
+    border-radius: 70px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 15px;
+    margin-top: 150px;
+
+  }
+
+  .middleSection {
+
+    background-size: cover;
+    min-height: 105vh;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.8)), url('background-food.png');
+    border-radius:40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 25px;
+    margin-top: 160px;
+    padding: 50px;
+
+  }
+
+  .backgrond-foodDish {
+    position: relative;
+    background-size: cover;
+    min-height: 105vh;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)), url('background-food.png');
+    border-radius: 70px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 15px;
+    margin-top: 50px;
+
+    text-align: center;
+
+    opacity: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+  .centerAnimation {
+    position: absolute;
+    width: 100%;
+    margin-top: 2px;
+  }
+
+  .round-bg-black {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    margin-top: -15px;
+
+
+  }
+
+  .upperSection {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+  }
+
+  .centerAnimation {
+    z-index: 3;
+  }
+
+  .mainRound {
+    height: 55vh;
+    width: 55vh;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 1000px;
+    background-image: url(plate.svg);
+    background-size: cover;
+    scale: 1.1;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .slideBox {
+    width: 100%;
+    height: 100%;
+    scale: 0.8;
+    border-radius: 10px;
+
+  }
+
+  .slideBox img {
+    position: absolute;
+  }
+
+
+  .mvingBoxWhite {
+    position: absolute;
+    height: 450px;
+    width: 400px;
+    background-color: #FFF;
+    border-radius: 10px;
+    margin-top: 450px;
+  }
+
+  .sliderImg-1 {
+    z-index: 1;
+  }
+
+  .sliderImg-2 {
+    z-index: 2;
+  }
+
+  .sliderImg-3 {
+    z-index: 3;
+  }
+
+  .sliderImg-4 {
+    z-index: 4;
+  }
+
+  .lets-eat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lets-eat-small {
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Rozha One', serif;
+    line-height: 1;
+  }
+
+
+
+  .insideRound {
+    background-image: url("/public/line-half-rounnd.svg");
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    scale: 1.2;
+
+  }
+
+
+
+
+
+
+
+
+
+  .bookTable {
+    max-width: 400px;
+    position: absolute;
+    margin-top: -55vh;
+    padding: 50px;
+  }
+
+  .deleveryAvilable {
+    max-width: 400px;
+    position: absolute;
+    margin-top: -58vh;
+    right: 0;
+    padding: 50px;
+  }
+
+  .bookTbleBtn {
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    text-align: center;
+  }
+
+
+  .OrderOnlineBtn1 {
+    border-radius: 100px;
+    border: 1px solid #008035;
+    text-align: center;
+    padding: 2px;
+  }
+
+  .OrderOnlineBtn2 {
+    border-radius: 100px;
+    text-align: center;
+    border: 1px solid #008035;
+    padding: 2px;
+  }
+
+
+  .OrderOnlineBtn3 {
+    border-radius: 100px;
+    border: 1px solid #00ac48;
+    background-color: #005f28;
+    text-align: center;
+    scale: 0.99;
+    line-height: 2.1;
+    padding: 2px;
+  }
+
+
+
+  .lineY {
+    height: 100vh;
+    width: 1px;
+    background-color: #000;
+    position: absolute;
+    margin-top: 55px;
+  }
+
+  .lineY:nth-child(1) {
+    left: 10%;
+  }
+
+  .lineY:nth-child(2) {
+    left: 20%;
+  }
+
+  .lineY:nth-child(3) {
+    left: 30%;
+  }
+
+  .lineY:nth-child(4) {
+    left: 40%;
+  }
+
+  .lineY:nth-child(5) {
+    left: 50%;
+  }
+
+  .lineY:nth-child(1) {
+    left: 10%;
+  }
+
+  .lineY:nth-child(6) {
+    left: 60%;
+  }
+
+  .lineY:nth-child(7) {
+    left: 70%;
+  }
+
+  .lineY:nth-child(8) {
+    left: 80%;
+  }
+
+  .lineY:nth-child(9) {
+    left: 90%;
+  }
+
+
+
+
+
+
+  header {
+    font-family: 'Aclonica', sans-serif;
+    margin: 15px;
+    background-color: #000;
+    border-radius: 25px;
+    margin-top: -10px;
+
+  }
+
+  nav {
+    padding: 8px;
+  }
+
+  nav ul {
+    padding: 8px;
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 8px;
+  }
+
+
+  .nav-btn {
+    margin: 15px;
+  }
+
+
+  .navbtnColor {
+    color: #908400;
+  }
+
+  .navbtnHover {
+    color: #fff;
+  }
+
+  .navbtnActive {
+    color: #fff;
+  }
+
+
+  .mobileNavIcon {
+    position: fixed;
+    right: 50px;
+    z-index: 999;
+    scale: 1.2;
+    cursor: pointer;
+  }
+
+
+  .mbileNavOpenDekstop {
+    position: fixed;
+    margin-top: -170px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    height: 100vh;
+    display: none;
+
+
+
+  }
+
+  .mbileNavOpenDekstopInside {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)), url('menu-bg1.svg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+
+  }
+
+  .mbileNavOpenDekstopInside ul {
+    padding: 50px;
+  }
+
+  .mbileNavOpenDekstopInside ul li {
+    font-size: 50px;
+    color: #fff;
+    line-height: 1.5;
+  }
+
+  .scotyBoy {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+
+
+  }
+
+  .pathAnimation {
+    margin-top: -225px;
+  }
+
+ 
+.dekstopNav{ display: inline;}
+.mobileNav{ display: none; }
+
+
+  @media screen and (max-width: 640px) {
+
+    
+    .mobileNavIcon {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      right:  50px;
+      z-index: 9;
+      scale: 1.2;
+      
+    }
+
+
+
+
+
+ .dekstopnNav{ display: none;}
+.phNumber {
+    font-size: 50px;
+    color: #FFF;
+    font-weight: 700;
+}
+.dekstopNav{ display: none;}
+.mobileNav{ display: inline; margin-left:0; z-index: 999999; background-color: red;}
+.round-bg-black{ display: none;}
+
+    .textLineRight {
+      font-size: 4vh;
+      font-weight: bold;
+      line-height: 1;
+      width: 100vw;
+      color: #151515;
+      font-family: 'Rozha One', serif;
+  
+    }
+    .lineY{ opacity: 0.2;}
+    .round-bg-black {
+      margin-top: -250px;
+        }
+  
+.scotyBoy{ display: none;}
+.centerAnimation{ min-height: 100vh; z-index: -1;}
+
+.deleveryAvilable{ margin-top: 50px;}
+
+.mainRound {
+  height: 75vw;
+  width: 75vw;
+  margin: 100px auto 0px;
+  border-radius: 1000px;
+  border: 1px solid #fff;
+  background-color: #FFF;
+}
+
+.dekstopNav { display:none;}
+.bookingSection{ min-height: 100%; width: 100vw;}
+.dinnerPlan{
+            font-family: 'Rozha One', serif;
+            margin: auto;
+            color: #ffffff;
+            width: 100%;
+            margin-top: 13vh;
+            height: 70vh;
+            z-index: 999;
+            line-height: 1;
+            }
+
+.aboutContent {
+  padding: 10px;
+  font-size: 18px;}
+
+
+  .backgrond-foodContact {
+    
+    margin-top: 0px;
+}
+
+
+
+.headingSize {
+  font-size: 20px;}
+.dinnerPlan .h1 {
+  font-size: 20px;}
+
+    header nav {
+      background-color: #000;
+      font-size: 16px; 
+      height: 80vh;  
+      margin-top: 100px;
+      width: 100vw;
+      
+    }
+
+    header nav li a{
+    font-size: 26px;
+    display: none;
+ 
+    }
+
+    .mobileNavIcon {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+ 
+      left:  0px;
+      z-index: 9;
+      scale: 1.2;
+      
+    }
+
+    .middleSection {
+      font-size: 18px;margin-top: 15px;
+    }
+ 
+
+    nav {
+      padding: 8px;
+    }
+
+    nav ul {
+      padding: 8px;
+      display: flex;
+    }
+
+    nav ul li {
+      padding: 8px;
+      font-size: 40px;
+    }
+
+    .fromContact {
+      max-width:100%;
+      margin: auto;
+      border-radius: 50px;
+      font-family: 'Rozha One', serif;
+      
+    }
+  
+.backgrond-food{ margin-top: 0;}
+
+
+    .round1 {
+      height: 70vw;
+      width: 70vw;
+      margin: auto;
+      border-radius: 1000px;
+
+      scale: 1.8;
+    }
+
+    nav {
+      position: absolute;
+      padding: 8px;
+      display: block;
+      z-index: 2;
+
+    }
+
+    nav ul {
+      display: block;
+      padding: 8px;
+
+    }
+
+
+
+
+
+  }
+
+
+
+
+  @media screen and (max-width: 800px) {
+
+
+      header nav {
+      background-color: #000;
+      font-size: 16px; 
+      height: 80vh;  
+      margin-top: 100px;
+      width: 100vw;
+      margin-bottom: 50px;
+    }
+
+    header nav li a{
+    font-size: 26px;
+ 
+    }
+
+    .mobileNavIcon {
+      position: absolute;
+      right: 50px;
+      z-index: 3;
+      scale: 1.2;
+    }
+
+    .mbileNavOpenDekstop {
+      position: fixed;
+      margin-top: -170px;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100vw;
+      height: 100vh;
+      opacity: 0;
+
+
+
+    }
+
+    .mbileNavOpenDekstopInside {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      background: linear-gradient(rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)), url('menu-bg1.svg');
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      text-align: center;
+
+    }
+
+
+ 
+
+    .round1 {
+      height: 70vw;
+      width: 70vw;
+      margin: auto;
+      border-radius: 1000px;
+      /* border: 1px solid #fff; */
+      scale: 0.8;
+    }
+
+    nav {
+      position: absolute;
+      padding: 8px;
+      display: block;
+
+    }
+
+    nav ul {
+      display: block;
+      padding: 8px;
+
+    }
+
+
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,1734 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+/*
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+*/
+
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
+.extrafont {
+  font-family: 'Rozha One', serif;
+}
+
+.tittleText {
+  font-family: 'Rozha One', serif;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.tittleTextlg {
+  font-family: 'Rozha One', serif;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 3rem;
+  line-height: 1;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.tittleTextSmall {
+  font-family: 'Rozha One', serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.visible{
+  visibility: visible;
+}
+
+.fixed{
+  position: fixed;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.block{
+  display: block;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.hidden{
+  display: none;
+}
+
+.h-14{
+  height: 3.5rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.place-items-center{
+  place-items: center;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.rounded{
+  border-radius: 0.25rem;
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-2{
+  padding: 0.5rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.p-5{
+  padding: 1.25rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+
+.pl-3{
+  padding-left: 0.75rem;
+}
+
+.pr-20{
+  padding-right: 5rem;
+}
+
+.pr-4{
+  padding-right: 1rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.text-gray-600{
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-gray-900{
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.duration-200{
+  transition-duration: 200ms;
+}
+
+.offer div {
+  width: 400px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: #000;
+  margin-top: 25px;
+}
+
+.fromContact {
+  max-width: 50%;
+  margin: auto;
+  border-radius: 50px;
+  font-family: 'Rozha One', serif;
+}
+
+.contactinsideRound {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  scale: 1.2;
+  z-index: 1;
+}
+
+.formhere {
+  font-family: 'Aclonica', sans-serif;
+}
+
+.formhere label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.formhere textarea {
+  font-size: 18px;
+  min-height: 200px;
+}
+
+.formhere input {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.fromContact .h1 {
+  font-size: 120px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.backgrond-foodContact {
+  position: relative;
+  background-size: cover;
+  min-height: 105vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.8)), url('background-food.png');
+  border-radius:40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 15px;
+  margin-top: 150px;
+}
+
+.contactVg-1 {
+  left: 10%;
+  top: 35%;
+  position: absolute;
+}
+
+.contactVg-2 {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+
+.contactVg-3 {
+  position: absolute;
+  right: 20%;
+  top: 40%;
+}
+
+.contactVg-4 {
+  position: absolute;
+  right: 30%;
+  top: 20%;
+}
+
+.contactVg-5 {
+  position: absolute;
+  left: 30%;
+  top: 60%;
+}
+
+.phNumber {
+  font-size: 120px;
+  color: #FFF;
+  font-weight: 700;
+}
+
+.bookingSection {
+  font-size: 40px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1C1B1B;
+  border-radius: 50px;
+  z-index: 9;
+}
+
+.middleBox {
+  position: relative;
+  min-height: 50vh;
+  width: 100vw;
+  margin-top: -100vh;
+}
+
+.dinnerPlan {
+  font-family: 'Rozha One', serif;
+  margin: auto;
+  color: #ffffff;
+  width: 40%;
+  margin-top: 25vh;
+  height: 70vh;
+  margin-bottom: 25px;
+  padding-left: 90px;
+  z-index: 999;
+  line-height: 1;
+}
+
+.plate {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  scale: 0.8;
+}
+
+.plate img {
+  position: absolute;
+}
+
+.textLineLeft {
+  font-size: 10vh;
+  font-weight: bold;
+  line-height: 1;
+  width: 100vw;
+  color: #202020;
+  font-family: 'Rozha One', serif;
+}
+
+.textLineRight {
+  font-size: 12vh;
+  font-weight: bold;
+  line-height: 1;
+  width: 100vw;
+  color: #151515;
+  font-family: 'Rozha One', serif;
+}
+
+.dinnerPlan .h1 {
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 15px 0px;
+}
+
+.dinnerPlan .h3 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 15px 0px;
+}
+
+.dinnerPlan .h5 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 15px 0px;
+}
+
+#smooth-content {
+  padding-bottom: 100px;
+}
+
+.footer {
+  margin-top: 25px;
+  margin-bottom:35px;
+  padding: 25px;
+  font-size:18px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #000;
+  border-radius: 15px;
+}
+
+.footer p{
+  line-height: 1.5;
+}
+
+.footer img {
+  margin: auto;
+}
+
+.floating-element {
+  width: 500px;
+  height: 500px;
+  background: blue;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  /* Enable 3D transformations */
+}
+
+.headingSize {
+  font-size: 50px;
+  font-family: 'Aclonica', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.card-menu {
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  height: 200px;
+  margin-bottom: 100px;
+  background-color: rgb(37, 37, 37);
+  color: #ffff;
+}
+
+.card-menu p {
+  font-size: 20px;
+  font-family: 'Aclonica', sans-serif;
+  padding: 15px 0px 0px;
+}
+
+.card-menu img {
+  width: 200px;
+  z-index: 1;
+}
+
+.card-menu:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.tiggerNavIcon {
+  width: 100%;
+}
+
+.navIndicator {
+  position: absolute;
+  top: 55px;
+  width: 50px;
+  height: 50px;
+  background-color: #FCD052;
+  right: 50px;
+  border-radius: 100px;
+  opacity: 0.5;
+}
+
+.topNavigation {
+  max-width: 800px;
+  margin: auto;
+}
+
+.leftNav {
+  width: 350px;
+  height: 100vh;
+  background-image: url("nav-left-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  scale: 1.2;
+  margin-left: 50px;
+  padding: 30px;
+}
+
+.leftNav ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.leftNav ul li {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  background-image: url("li-line-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.leftNav ul li div:nth-child(1) img {
+  width: 80px;
+}
+
+.leftNav ul li div:nth-child(2) {
+  padding-left: 25px;
+}
+
+.leftNav ul li:hover {
+  color: #e2cf00;
+  font-weight: 400;
+}
+
+.loader_box {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.item {
+  padding: 25px;
+  background-color: #000;
+  padding: 5px 5px 90px;
+  border-radius: 25px;
+}
+
+.item img {
+  border-radius: 20px;
+}
+
+.aboutContent {
+  padding: 10px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.backgrond-food {
+  position: relative;
+  background-size: cover;
+  min-height: 105vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.8)), url('background-food.png');
+  border-radius: 70px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 15px;
+  margin-top: 150px;
+}
+
+.middleSection {
+  background-size: cover;
+  min-height: 105vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.8)), url('background-food.png');
+  border-radius:40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 25px;
+  margin-top: 160px;
+  padding: 50px;
+}
+
+.backgrond-foodDish {
+  position: relative;
+  background-size: cover;
+  min-height: 105vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)), url('background-food.png');
+  border-radius: 70px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 15px;
+  margin-top: 50px;
+  text-align: center;
+  opacity: 0;
+}
+
+.centerAnimation {
+  position: absolute;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.round-bg-black {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  margin-top: -15px;
+}
+
+.upperSection {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+
+.centerAnimation {
+  z-index: 3;
+}
+
+.mainRound {
+  height: 55vh;
+  width: 55vh;
+  margin: auto;
+  margin-top: 70px;
+  border-radius: 1000px;
+  background-image: url(plate.svg);
+  background-size: cover;
+  scale: 1.1;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slideBox {
+  width: 100%;
+  height: 100%;
+  scale: 0.8;
+  border-radius: 10px;
+}
+
+.slideBox img {
+  position: absolute;
+}
+
+.sliderImg-1 {
+  z-index: 1;
+}
+
+.sliderImg-2 {
+  z-index: 2;
+}
+
+.sliderImg-3 {
+  z-index: 3;
+}
+
+.sliderImg-4 {
+  z-index: 4;
+}
+
+.lets-eat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lets-eat-small {
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Rozha One', serif;
+  line-height: 1;
+}
+
+.insideRound {
+  background-image: url("/public/line-half-rounnd.svg");
+  background-position: center center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  scale: 1.2;
+}
+
+.bookTable {
+  max-width: 400px;
+  position: absolute;
+  margin-top: -55vh;
+  padding: 50px;
+}
+
+.deleveryAvilable {
+  max-width: 400px;
+  position: absolute;
+  margin-top: -58vh;
+  right: 0;
+  padding: 50px;
+}
+
+.bookTbleBtn {
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+.OrderOnlineBtn1 {
+  border-radius: 100px;
+  border: 1px solid #008035;
+  text-align: center;
+  padding: 2px;
+}
+
+.OrderOnlineBtn2 {
+  border-radius: 100px;
+  text-align: center;
+  border: 1px solid #008035;
+  padding: 2px;
+}
+
+.OrderOnlineBtn3 {
+  border-radius: 100px;
+  border: 1px solid #00ac48;
+  background-color: #005f28;
+  text-align: center;
+  scale: 0.99;
+  line-height: 2.1;
+  padding: 2px;
+}
+
+.lineY {
+  height: 100vh;
+  width: 1px;
+  background-color: #000;
+  position: absolute;
+  margin-top: 55px;
+}
+
+.lineY:nth-child(1) {
+  left: 10%;
+}
+
+.lineY:nth-child(2) {
+  left: 20%;
+}
+
+.lineY:nth-child(3) {
+  left: 30%;
+}
+
+.lineY:nth-child(4) {
+  left: 40%;
+}
+
+.lineY:nth-child(5) {
+  left: 50%;
+}
+
+.lineY:nth-child(1) {
+  left: 10%;
+}
+
+.lineY:nth-child(6) {
+  left: 60%;
+}
+
+.lineY:nth-child(7) {
+  left: 70%;
+}
+
+.lineY:nth-child(8) {
+  left: 80%;
+}
+
+.lineY:nth-child(9) {
+  left: 90%;
+}
+
+header {
+  font-family: 'Aclonica', sans-serif;
+  margin: 15px;
+  background-color: #000;
+  border-radius: 25px;
+  margin-top: -10px;
+}
+
+nav {
+  padding: 8px;
+}
+
+nav ul {
+  padding: 8px;
+  display: flex;
+}
+
+nav ul li {
+  padding: 8px;
+}
+
+.nav-btn {
+  margin: 15px;
+}
+
+.navbtnColor {
+  color: #908400;
+}
+
+.navbtnActive {
+  color: #fff;
+}
+
+.mobileNavIcon {
+  position: fixed;
+  right: 50px;
+  z-index: 999;
+  scale: 1.2;
+  cursor: pointer;
+}
+
+.mbileNavOpenDekstop {
+  position: fixed;
+  margin-top: -170px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+.mbileNavOpenDekstopInside {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)), url('menu-bg1.svg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.mbileNavOpenDekstopInside ul {
+  padding: 50px;
+}
+
+.mbileNavOpenDekstopInside ul li {
+  font-size: 50px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.scotyBoy {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+}
+
+.pathAnimation {
+  margin-top: -225px;
+}
+
+@media screen and (max-width: 640px) {
+  .mobileNavIcon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right:  50px;
+    z-index: 9;
+    scale: 1.2;
+  }
+
+  .dekstopnNav{
+    display: none;
+  }
+
+  .phNumber {
+    font-size: 50px;
+    color: #FFF;
+    font-weight: 700;
+  }
+
+  .dekstopNav{
+    display: none;
+  }
+
+  .mobileNav{
+    display: inline;
+    margin-left:0;
+    z-index: 999999;
+    background-color: red;
+  }
+
+  .round-bg-black{
+    display: none;
+  }
+
+  .textLineRight {
+    font-size: 4vh;
+    font-weight: bold;
+    line-height: 1;
+    width: 100vw;
+    color: #151515;
+    font-family: 'Rozha One', serif;
+  }
+
+  .lineY{
+    opacity: 0.2;
+  }
+
+  .round-bg-black {
+    margin-top: -250px;
+  }
+
+  .scotyBoy{
+    display: none;
+  }
+
+  .centerAnimation{
+    min-height: 100vh;
+    z-index: -1;
+  }
+
+  .deleveryAvilable{
+    margin-top: 50px;
+  }
+
+  .mainRound {
+    height: 75vw;
+    width: 75vw;
+    margin: 100px auto 0px;
+    border-radius: 1000px;
+    border: 1px solid #fff;
+    background-color: #FFF;
+  }
+
+  .dekstopNav {
+    display:none;
+  }
+
+  .bookingSection{
+    min-height: 100%;
+    width: 100vw;
+  }
+
+  .dinnerPlan{
+    font-family: 'Rozha One', serif;
+    margin: auto;
+    color: #ffffff;
+    width: 100%;
+    margin-top: 13vh;
+    height: 70vh;
+    z-index: 999;
+    line-height: 1;
+  }
+
+  .aboutContent {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .backgrond-foodContact {
+    margin-top: 0px;
+  }
+
+  .headingSize {
+    font-size: 20px;
+  }
+
+  .dinnerPlan .h1 {
+    font-size: 20px;
+  }
+
+  header nav {
+    background-color: #000;
+    font-size: 16px;
+    height: 80vh;
+    margin-top: 100px;
+    width: 100vw;
+  }
+
+  header nav li a{
+    font-size: 26px;
+    display: none;
+  }
+
+  .mobileNavIcon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:  0px;
+    z-index: 9;
+    scale: 1.2;
+  }
+
+  .middleSection {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  nav {
+    padding: 8px;
+  }
+
+  nav ul {
+    padding: 8px;
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 8px;
+    font-size: 40px;
+  }
+
+  .fromContact {
+    max-width:100%;
+    margin: auto;
+    border-radius: 50px;
+    font-family: 'Rozha One', serif;
+  }
+
+  .backgrond-food{
+    margin-top: 0;
+  }
+
+  .round1 {
+    height: 70vw;
+    width: 70vw;
+    margin: auto;
+    border-radius: 1000px;
+    scale: 1.8;
+  }
+
+  nav {
+    position: absolute;
+    padding: 8px;
+    display: block;
+    z-index: 2;
+  }
+
+  nav ul {
+    display: block;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header nav {
+    background-color: #000;
+    font-size: 16px;
+    height: 80vh;
+    margin-top: 100px;
+    width: 100vw;
+    margin-bottom: 50px;
+  }
+
+  header nav li a{
+    font-size: 26px;
+  }
+
+  .mobileNavIcon {
+    position: absolute;
+    right: 50px;
+    z-index: 3;
+    scale: 1.2;
+  }
+
+  .mbileNavOpenDekstop {
+    position: fixed;
+    margin-top: -170px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+  }
+
+  .mbileNavOpenDekstopInside {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)), url('menu-bg1.svg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .round1 {
+    height: 70vw;
+    width: 70vw;
+    margin: auto;
+    border-radius: 1000px;
+    /* border: 1px solid #fff; */
+    scale: 0.8;
+  }
+
+  nav {
+    position: absolute;
+    padding: 8px;
+    display: block;
+  }
+
+  nav ul {
+    display: block;
+    padding: 8px;
+  }
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-color: #5A5A5A;
+  background: linear-gradient(rgba(0, 0, 0, 0.90),
+      rgba(0, 0, 0, 0.30)), url('background-food.png');
+}
+
+.hover\:bg-gray-50:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.hover\:navbtnHover:hover {
+  color: #fff;
+}
+
+@media (min-width: 768px){
+  .md\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .md\:ml-auto{
+    margin-left: auto;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:border-0{
+    border-width: 0px;
+  }
+
+  .lg\:p-0{
+    padding: 0px;
+  }
+
+  .lg\:hover\:bg-transparent:hover{
+    background-color: transparent;
+  }
+}
